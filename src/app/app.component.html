@@ -1,7 +1,25 @@
-<h1>มา 4 จ่าย 3 </h1>
+<!-- <h1>มา 4 จ่าย 3 </h1>
 <input #priceOfBuffe type="text" placeholder="กรอกราคา">
 <button type="button" (click)="callBuffe(priceOfBuffe.value)">คำนวณราคา</button>
-<h2>คนละ {{result}} บาท</h2>
-<app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
-<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar>
-<app-min-max></app-min-max>
+<h2>คนละ {{result}} บาท</h2> -->
+<!-- <app-action-bar (numberChange)="testNumberChange($event)" [step]="5"></app-action-bar>
+<app-action-bar (numberChange)="testNumberChange($event)" [step]="10"></app-action-bar> -->
+
+<!-- <div class="px-3 bg-slate-500">
+    <app-min-max minlabel="myMinLable" maxlabel="myMaxLable" (maxChange)="doMaxChange($event)"  
+    (minChange)="doMinChange($event)"></app-min-max>
+</div>
+
+<div>
+    <app-sqaureflex [divWidth] = "sqwidth"></app-sqaureflex>
+</div>
+<div class="space-x-3">
+    width:
+    <button type="button" (click)="sqwidth=50">50px</button>
+    <button type="button" (click)="sqwidth=100">100px</button>
+    <button type="button" (click)="sqwidth=200">200px</button>
+    <button type="button" (click)="sqwidth=300">300px</button>
+</div> -->
+
+<app-action-bar [(count)]="appCounter" [step]="10"></app-action-bar>
+<app-sqaureflex [divWidth]="appCounter"></app-sqaureflex>
